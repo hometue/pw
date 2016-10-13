@@ -5,6 +5,21 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<script>
+var screen = $.mobile.getScreenHeight();
+
+var header = $(".ui-header").hasClass("ui-header-fixed") ? $(".ui-header").outerHeight()  - 1 : $(".ui-header").outerHeight();
+
+var footer = $(".ui-footer").hasClass("ui-footer-fixed") ? $(".ui-footer").outerHeight() - 1 : $(".ui-footer").outerHeight();
+
+/* content div has padding of 1em = 16px (32px top+bottom). This step
+   can be skipped by subtracting 32px from content var directly. */
+var contentCurrent = $(".ui-content").outerHeight() - $(".ui-content").height();
+
+var content = screen - header - footer - contentCurrent;
+
+$(".ui-content").height(content);
+</script>
 </head>
 <body>
 <div data-role="page" id="main">
@@ -24,11 +39,11 @@
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
-				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
-				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
-				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
-				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+				<li><a href="#book"><img src="img/Near Me-100.png" style="max-width:100%;max-height:100%;"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" style="max-width:100%;max-height:100%;"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" style="max-width:100%;max-height:100%;"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" style="max-width:100%;max-height:100%;"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" style="max-width:100%;max-height:100%;"><br>Measurements</a></li>
 			</ul>
 		</div>
 	</div>
@@ -37,11 +52,11 @@
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#"><img src="img/Near Me-100b.png" height="100" width="100"><br>Near Me</a></li>
-				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
-				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
-				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
-				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+				<li><a href="#"><img src="img/Near Me-100b.png" style="max-width:100%;max-height:100%;"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" style="max-width:100%;max-height:100%;"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" style="max-width:100%;max-height:100%;"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" style="max-width:100%;max-height:100%;"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" style="max-width:100%;max-height:100%;"><br>Measurements</a></li>
 			</ul>
 		</div>
 	</div>
@@ -59,23 +74,23 @@
 </div>
 <div data-role="page" id="exercise">
 	<div data-role="main" class="ui-content">
-		<div class="ui-grid-a">
-			<div class="ui-block-a"><a href="#exercisearm" class="ui-btn">Arms</a></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn">Legs</a></div>
-			<div class="ui-block-a"><a href="#" class="ui-btn">Chest</a></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn">Shoulders</a></div>
-			<div class="ui-block-a"><a href="#" class="ui-btn">Back</a></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn"><img src="img/20113-solid-black-heart-design.png" height="10%" width="10%"><br>Cardio</a></div>
+		<div class="ui-grid-a" style="height: 100%">
+			<div class="ui-block-a" style="height: 33%"><a href="#exercisearm" class="ui-btn"><img src="img/arm_black.png" height="10%" width="10%"><br>Arms</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn">Legs</a></div>
+			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn">Chest</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn">Shoulders</a></div>
+			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn">Back</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn"><img src="img/20113-solid-black-heart-design.png" height="10%" width="10%"><br>Cardio</a></div>
 		</div>
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
-				<li><a href="#"><img src="img/Dumbbell-100b.png" height="100" width="100"><br>Exercise</a></li>
-				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
-				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
-				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+				<li><a href="#book"><img src="img/Near Me-100.png" style="max-width:100%;max-height:100%;"><br>Near Me</a></li>
+				<li><a href="#"><img src="img/Dumbbell-100b.png" style="max-width:100%;max-height:100%;"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" style="max-width:100%;max-height:100%;"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" style="max-width:100%;max-height:100%;"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" style="max-width:100%;max-height:100%;"><br>Measurements</a></li>
 			</ul>
 		</div>
 	</div>
@@ -88,17 +103,17 @@
 </div>
 <div data-role="page" id="immerse">
 	<div data-role="main" class="ui-content">
-		<a href="#immerselist" class="ui-btn">Start IMMERSE</a>
-		<a href="#immersept" class="ui-btn">Points</a>
+		<a href="#immerselist" class="ui-btn" style="height: 50%;">Start IMMERSE</a>
+		<a href="#immersept" class="ui-btn" style="height: 50%;">Points</a>
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
-				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
-				<li><a href="#"><img src="img/TV-100b.png" height="100" width="100"><br>IMMERSE</a></li>
-				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
-				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+				<li><a href="#book"><img src="img/Near Me-100.png" style="max-width:100%;max-height:100%;"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" style="max-width:100%;max-height:100%;"><br>Exercise</a></li>
+				<li><a href="#"><img src="img/TV-100b.png" style="max-width:100%;max-height:100%;"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" style="max-width:100%;max-height:100%;"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" style="max-width:100%;max-height:100%;"><br>Measurements</a></li>
 			</ul>
 		</div>
 	</div>
@@ -198,11 +213,11 @@
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
-				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
-				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
-				<li><a href="#"><img src="img/Activity Feed-100b.png" height="100" width="100"><br>Programme</a></li>
-				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+				<li><a href="#book"><img src="img/Near Me-100.png" style="max-width:100%;max-height:100%;"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" style="max-width:100%;max-height:100%;"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" style="max-width:100%;max-height:100%;"><br>IMMERSE</a></li>
+				<li><a href="#"><img src="img/Activity Feed-100b.png" style="max-width:100%;max-height:100%;"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" style="max-width:100%;max-height:100%;"><br>Measurements</a></li>
 			</ul>
 		</div>
 	</div>
@@ -212,6 +227,14 @@
 <div data-role="page" id="programmemapcat">
 </div>
 <div data-role="page" id="programmecat">
+	<div data-role="main" class="ui-content">
+		<div class="ui-grid-a" style="height: 100%">
+			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn">Yoga</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn">Martial Arts</a></div>
+			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn"><img src="img/20113-solid-black-heart-design.png" height="10%" width="10%"><br>Cardio</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn">Others</a></div>
+		</div>
+	</div>
 </div>
 <div data-role="page" id="programmecatmap">
 </div>
@@ -221,7 +244,7 @@
 	<div data-role="main" class="ui-content">
 		<div style="text-align: center;">Location where fat is located</div>
 		<br>
-		<div style="margin: 0 auto; width: 10%;text-align: center;"><img src="img/Person_icon_BLACK-01.svg.png" height="50%" width="100"></div>
+		<div style="margin: 0 auto; width: 10%;text-align: center;"><img src="img/Person_icon_BLACK-01.svg.png" height="50%" width="50"></div>
 		<br><br>
 		<div style="text-align: center;">
 		Total mass: 65kg
@@ -229,16 +252,22 @@
 		Fat concentrated at: Hips
 		<br>
 		Suggested exercise: Sit-up
+		<br><br>
+		Recommended weight: 20 kg
+		<br>
+		Recommended heartbeat: 190 bpm
+		<br>
+		Recommended speed: 10 km/h
 		</div>
 	</div>
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
-				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
-				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
-				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
-				<li><a href="#"><img src="img/Weight-100b.png" height="100" width="100"><br>Measurements</a></li>
+				<li><a href="#book"><img src="img/Near Me-100.png" style="max-width:100%;max-height:100%;"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" style="max-width:100%;max-height:100%;"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" style="max-width:100%;max-height:100%;"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" style="max-width:100%;max-height:100%;"><br>Programme</a></li>
+				<li><a href="#"><img src="img/Weight-100b.png" style="max-width:100%;max-height:100%;"><br>Measurements</a></li>
 			</ul>
 		</div>
 	</div>
