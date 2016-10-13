@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="main">
+	<div data-role="header">
+		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+		<div class="ui-title">Name</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#book">Location</a></li>
+			<li><a href="#measurement">Fat Analysis</a></li>
+			<li><a href="#exercise">Exercises</a></li>
+			<li><a href="#programme">Programmes</a></li>
+			<li><a href="#immerse">IMMERSE</a></li>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div data-role="page" id="book">
+	<div data-role="footer" data-position="fixed">		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#"><img src="img/Near Me-100b.png" height="100" width="100"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div data-role="page" id="nfc">
+	<div data-role="header">
+		<a href="#" class="ui-btn ui-btn-left ui-btn-inline ui-btn-icon-left ui-icon-arrow-l">Back</a>
+		<div class="ui-title">Booking</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div style="left: 50%;margin-left: 430px;"><img src="img/nfc-icon-27.png" height="512" width="512"></div>
+		<br>
+		<div style="text-align: center;">Bring your phone to the receiver.</div>
+	</div>
+</div>
+<div data-role="page" id="exercise">
+	<div data-role="main" class="ui-content">
+		<div class="ui-grid-a">
+			<div class="ui-block-a"><a href="#exercisearm" class="ui-btn">Arms</a></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn">Legs</a></div>
+			<div class="ui-block-a"><a href="#" class="ui-btn">Chest</a></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn">Shoulders</a></div>
+			<div class="ui-block-a"><a href="#" class="ui-btn">Back</a></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn"><img src="img/20113-solid-black-heart-design.png" height="10%" width="10%"><br>Cardio</a></div>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
+				<li><a href="#"><img src="img/Dumbbell-100b.png" height="100" width="100"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div data-role="page" id="exercisearm">
+	<div data-role="header">
+		<a href="#exercise" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Choose a muscle group</div>
+	</div>
+</div>
+<div data-role="page" id="immerse">
+	<div data-role="main" class="ui-content">
+		<a href="#immerselist" class="ui-btn">Start IMMERSE</a>
+		<a href="#immersept" class="ui-btn">Points</a>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
+				<li><a href="#"><img src="img/TV-100b.png" height="100" width="100"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div data-role="page" id="immerselist">
+	<div data-role="header">
+		<a href="#immerse" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">IMMERSE</div>
+		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a>
+	</div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#immersedificulty">Zombie</a></li>
+			<li><a href="#immersedificulty">Weight lifting</a></li>
+			<li><a href="#immersedificulty">Marathon</a></li>
+		</ul>
+	</div>
+</div>
+<div data-role="page" id="immersedificulty">
+	<div data-role="header">
+		<a href="#immerselist" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Difficulty</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#immersestart">Easy</a></li>
+			<li><a href="#immersestart">Hard</a></li>
+		</ul>
+	</div>
+</div>
+<div data-role="page" id="immersestart">
+	<div data-role="header">
+		<a href="#immersedificulty" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Start!</div>
+	</div>
+	<div data-role="main" class="ui-content" style="text-align: center;">
+	Start!
+	</div>
+</div>
+<div data-role="page" id="immersept">
+	<div data-role="header">
+		<a href="#immerse" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Points</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">10 points</div>
+		<br><br>
+		<ul data-role="listview">
+			<li><a href="#immerseptlist">How to redeem</a></li>
+			<li><a href="#">What to redeem</a></li>
+		</ul>
+	</div>
+</div>
+<div data-role="page" id="immerseptlist">
+	<div data-role="header">
+		<a href="#immerse" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">How to redeem</div>
+		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a>
+	</div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#immerseptsys">Zombie</a></li>
+			<li><a href="#">Weight lifting</a></li>
+			<li><a href="#">Marathon</a></li>
+		</ul>
+	</div>
+</div>
+<div data-role="page" id="immerseptsys">
+	<div data-role="header">
+		<a href="#immerseptlist" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Points system</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">
+		<h1>Easy</h1>
+		<br>
+		Every 500m
+		<br>
+		1 pt
+		<br><br><br><br>
+		<h1>Hard</h1>
+		<br>
+		Every 500m
+		<br>
+		2 pt
+		</div>
+	</div>
+</div>
+<div data-role="page" id="programme">
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">Choose by:</div>
+		<br>
+		<a href="#programmecat" class="ui-btn">Category</a>
+		<br>
+		<a href="#programmemap" class="ui-btn">Map</a>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
+				<li><a href="#"><img src="img/Activity Feed-100b.png" height="100" width="100"><br>Programme</a></li>
+				<li><a href="#measurement"><img src="img/Weight-100.png" height="100" width="100"><br>Measurements</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div data-role="page" id="programmemap">
+</div>
+<div data-role="page" id="programmemapcat">
+</div>
+<div data-role="page" id="programmecat">
+</div>
+<div data-role="page" id="programmecatmap">
+</div>
+<div data-role="page" id="programmebook">
+</div>
+<div data-role="page" id="measurement">
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">Location where fat is located</div>
+		<br>
+		<div style="margin: 0 auto; width: 10%;text-align: center;"><img src="img/Person_icon_BLACK-01.svg.png" height="50%" width="100"></div>
+		<br><br>
+		<div style="text-align: center;">
+		Total mass: 65kg
+		<br>
+		Fat concentrated at: Hips
+		<br>
+		Suggested exercise: Sit-up
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#book"><img src="img/Near Me-100.png" height="100" width="100"><br>Near Me</a></li>
+				<li><a href="#exercise"><img src="img/Dumbbell-100.png" height="100" width="100"><br>Exercise</a></li>
+				<li><a href="#immerse"><img src="img/TV-100.png" height="100" width="100"><br>IMMERSE</a></li>
+				<li><a href="#programme"><img src="img/Activity Feed-100.png" height="100" width="100"><br>Programme</a></li>
+				<li><a href="#"><img src="img/Weight-100b.png" height="100" width="100"><br>Measurements</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
