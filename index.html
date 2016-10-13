@@ -49,6 +49,9 @@ $(".ui-content").height(content);
 	</div>
 </div>
 <div data-role="page" id="book">
+	<div data-role="main" class="ui-content">
+		<a href="#booking"><img src="img/map.png" style="max-width:100%;max-height:100%;"></a>
+	</div>
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar">
 			<ul>
@@ -61,13 +64,26 @@ $(".ui-content").height(content);
 		</div>
 	</div>
 </div>
+<div data-role="page" id="booking">
+	<img src="img/174-free-google-maps-pointer.png" style="max-height:5em;"> Penang Road
+	<br>
+	<img src="img/838.png" style="max-height:5em;"> 10 mins travel
+	<br><br>
+	Book For:
+	<br>
+	<input type="date" name="date" id="date" value="">
+	<br>
+	Duration: <input type="range" name="slider" id="slider" value="1" min="0" max="10"> hours
+	<br>
+	<a href="#nfc" class="ui-btn">Book</a>
+</div>
 <div data-role="page" id="nfc">
 	<div data-role="header">
 		<a href="#" class="ui-btn ui-btn-left ui-btn-inline ui-btn-icon-left ui-icon-arrow-l">Back</a>
 		<div class="ui-title">Booking</div>
 	</div>
 	<div data-role="main" class="ui-content">
-		<div style="left: 50%;margin-left: 430px;"><img src="img/nfc-icon-27.png" height="512" width="512"></div>
+		<div style="text-align: center;"><img src="img/nfc-icon-27.png" height="512" width="512"></div>
 		<br>
 		<div style="text-align: center;">Bring your phone to the receiver.</div>
 	</div>
@@ -99,6 +115,40 @@ $(".ui-content").height(content);
 	<div data-role="header">
 		<a href="#exercise" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
 		<div class="ui-title">Choose a muscle group</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#exerciselist"><img src="img/arm.png" style="max-width:100%;max-height:100%;"></a>
+	</div>
+</div>
+<div data-role="page" id="exerciselist">
+	<div data-role="header">
+		<a href="#exercisearm" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">List of exercises</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li><a href="#exercisebicepcurl">Bicep Curl</a></li>
+			<li><a href="#">Tricep Curl</a></li>
+		</ul>
+	</div>
+</div>
+<div data-role="page" id="exercisebicepcurl">
+	<div data-role="header">
+		<a href="#exerciselist" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Bicep Curl</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		{INSERT VIDEO HERE}
+		<br><br>
+		Equipment: Dumbbell
+		<br>
+		Steps:
+		<ol>
+			<li>Stand up straight with a dumbbell in each hand at arm's length. Keep your elbows close to your torso and rotate the palms of your hands until they are facing forward. This will be your starting position.</li>
+			<li>Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps. Continue to raise the weights until your biceps are fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a brief pause as you squeeze your biceps.</li>
+			<li>Then, inhale and slowly begin to lower the dumbbells back to the starting position.</li>
+			<li>Repeat for the recommended amount of repetitions.</li>
+		</ol>
 	</div>
 </div>
 <div data-role="page" id="immerse">
@@ -223,30 +273,91 @@ $(".ui-content").height(content);
 	</div>
 </div>
 <div data-role="page" id="programmemap">
+	<div data-role="header">
+		<a href="#programme" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Map</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#programmemapcat"><img src="img/map.png" style="max-width:100%;max-height:100%;"></a>
+	</div>
 </div>
 <div data-role="page" id="programmemapcat">
-</div>
-<div data-role="page" id="programmecat">
+	<div data-role="header">
+		<a href="#programmemap" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Category</div>
+	</div>
 	<div data-role="main" class="ui-content">
 		<div class="ui-grid-a" style="height: 100%">
-			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn">Yoga</a></div>
+			<div class="ui-block-a" style="height: 33%"><a href="#programmemapcatbook" class="ui-btn">Yoga</a></div>
 			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn">Martial Arts</a></div>
 			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn"><img src="img/20113-solid-black-heart-design.png" height="10%" width="10%"><br>Cardio</a></div>
-			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn">Others</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn"><img src="img/Question_mark_(black_on_white).png" height="10%" width="10%"><br>Others</a></div>
+		</div>
+	</div>
+</div>
+<div data-role="page" id="programmecat">
+	<div data-role="header">
+		<a href="#programme" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Category</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div class="ui-grid-a" style="height: 100%">
+			<div class="ui-block-a" style="height: 33%"><a href="#programmecatmap" class="ui-btn">Yoga</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn">Martial Arts</a></div>
+			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn"><img src="img/20113-solid-black-heart-design.png" height="10%" width="10%"><br>Cardio</a></div>
+			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn"><img src="img/Question_mark_(black_on_white).png" height="10%" width="10%"><br>Others</a></div>
 		</div>
 	</div>
 </div>
 <div data-role="page" id="programmecatmap">
+	<div data-role="header">
+		<a href="#programmecat" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Map</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#programmecatmapbook"><img src="img/map.png" style="max-width:100%;max-height:100%;"></a>
+	</div>
 </div>
-<div data-role="page" id="programmebook">
+<div data-role="page" id="programmecatmapbook">
+	<div data-role="header">
+		<a href="#programmecatmap" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Booking</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">
+		<img src="img/DSCF0834_yoga.jpg" style="max-width:100%;max-height:100%;">
+		<br>
+		Venue: CHENG SAN CC, Dance Studio
+		<br>
+		Date:19-Sep-16 to 05-Dec-16
+		<br>
+		Time: 07:00 PM to 08:15 PM
+		</div>
+	</div>
+</div>
+<div data-role="page" id="programmemapcatbook">
+	<div data-role="header">
+		<a href="#programmemapcat" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Booking</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">
+		<img src="img/DSCF0834_yoga.jpg" style="max-width:100%;max-height:100%;">
+		<br>
+		Venue: CHENG SAN CC, Dance Studio
+		<br>
+		Date:19-Sep-16 to 05-Dec-16
+		<br>
+		Time: 07:00 PM to 08:15 PM
+		</div>
+	</div>
 </div>
 <div data-role="page" id="measurement">
 	<div data-role="main" class="ui-content">
 		<div style="text-align: center;">Location where fat is located</div>
 		<br>
-		<div style="margin: 0 auto; width: 10%;text-align: center;"><img src="img/Person_icon_BLACK-01.svg.png" height="50%" width="50"></div>
+		<div style="text-align: center;"><img src="img/Person_icon_BLACK-01.svg.png" height="50%" width="50">
 		<br><br>
-		<div style="text-align: center;">
 		Total mass: 65kg
 		<br>
 		Fat concentrated at: Hips
