@@ -225,7 +225,7 @@ $(".ui-content").height(content);
 </div>
 <div data-role="page" id="immerseredeem">
 	<div data-role="header">
-		<a href="#immerse" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<a href="#immersept" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
 		<div class="ui-title">What to redeem</div>
 		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a>
 	</div>
@@ -248,8 +248,8 @@ $(".ui-content").height(content);
 	<div data-role="main" class="ui-content">
 		<ul data-role="listview">
 			<li><a href="#immerseptsys">Zombie</a></li>
-			<li><a href="#">Weight lifting</a></li>
-			<li><a href="#">Marathon</a></li>
+			<li><a href="#immerseptsyswl">Weight lifting</a></li>
+			<li><a href="#immerseptsysm">Marathon</a></li>
 		</ul>
 	</div>
 </div>
@@ -262,15 +262,43 @@ $(".ui-content").height(content);
 		<div style="text-align: center;">
 		<h1>Easy</h1>
 		<br>
-		Every 500m
+		Every 100m
 		<br>
 		1 pt
 		<br><br><br><br>
 		<h1>Hard</h1>
 		<br>
-		Every 500m
+		Every 100m
 		<br>
 		2 pt
+		</div>
+	</div>
+</div>
+<div data-role="page" id="immerseptsyswl">
+	<div data-role="header">
+		<a href="#immerseptlist" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Points system</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">
+		1 point every 50 reps
+		</div>
+	</div>
+</div>
+<div data-role="page" id="immerseptsysm">
+	<div data-role="header">
+		<a href="#immerseptlist" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Points system</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<div style="text-align: center;">
+		<h1>5km</h1>
+		<br>
+		1 point if within 40min, additional 1 point for every 5 min shorter
+		<br><br><br><br>
+		<h1>10km</h1>
+		<br>
+		1 point if within 80 min, additional 1 point for every 5 min shorter
 		</div>
 	</div>
 </div>
