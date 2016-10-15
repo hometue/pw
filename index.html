@@ -218,15 +218,31 @@ $(".ui-content").height(content);
 		<div style="text-align: center;">10 points</div>
 		<br><br>
 		<ul data-role="listview">
-			<li><a href="#immerseptlist">How to redeem</a></li>
-			<li><a href="#">What to redeem</a></li>
+			<li><a href="#immerseptlist">How to get points</a></li>
+			<li><a href="#immerseredeem">What to redeem</a></li>
 		</ul>
+	</div>
+</div>
+<div data-role="page" id="immerseredeem">
+	<div data-role="header">
+		<a href="#immerse" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">What to redeem</div>
+		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a>
+	</div>
+	<div data-role="main" class="ui-content">
+		For every 30 points, you can redeem 1 minute free in the cubicle gym
+		<br><br>
+		I want to redeem:
+		 <input type="range" name="slider" id="slider" value="1" min="0" max="180"> free minutes
+		<br>
+		<br>
+		<a class="ui-btn" href="#">Redeem</a>
 	</div>
 </div>
 <div data-role="page" id="immerseptlist">
 	<div data-role="header">
 		<a href="#immerse" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
-		<div class="ui-title">How to redeem</div>
+		<div class="ui-title">How to get points</div>
 		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a>
 	</div>
 	<div data-role="main" class="ui-content">
