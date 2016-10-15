@@ -159,6 +159,7 @@ $(".ui-content").height(content);
 <div data-role="page" id="immerse">
 	<div data-role="main" class="ui-content">
 		<a href="#immerselist" class="ui-btn" style="height: 50%;">Start IMMERSE</a>
+		<br>
 		<a href="#immersept" class="ui-btn" style="height: 50%;">Points</a>
 	</div>
 	<div data-role="footer" data-position="fixed">		
@@ -205,7 +206,7 @@ $(".ui-content").height(content);
 		<div class="ui-title">Start!</div>
 	</div>
 	<div data-role="main" class="ui-content" style="text-align: center;">
-	Start!
+	<h1>Start!</h1>
 	</div>
 </div>
 <div data-role="page" id="immersept">
@@ -263,7 +264,7 @@ $(".ui-content").height(content);
 		<br>
 		<a href="#programmecat" class="ui-btn">Category</a>
 		<br>
-		<a href="#programmemap" class="ui-btn">Map</a>
+		<a href="#programmemap" class="ui-btn">Location</a>
 	</div>
 	<div data-role="footer" data-position="fixed">		
 		<div data-role="navbar">
@@ -280,10 +281,24 @@ $(".ui-content").height(content);
 <div data-role="page" id="programmemap">
 	<div data-role="header">
 		<a href="#programme" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
-		<div class="ui-title">Map</div>
+		<div class="ui-title">Location</div>
 	</div>
 	<div data-role="main" class="ui-content">
-		<a href="#programmemapcat"><img src="img/map.png" style="max-width:100%;max-height:100%;"></a>
+		<ul data-role="listview">
+			<li><a href="#">Anchorvale Community Centre</a></li>
+			<li><a href="#">Ang Mo Kio Community Centre</a></li>
+			<li><a href="#">Bedok Community Centre</a></li>
+			<li><a href="#programmecatmapbook">Cheng San Community Club</a></li>
+			<li><a href="#">Hougang Community Club</a></li>
+			<li><a href="#">Kampong Kembangan Community Club</a></li>
+			<li><a href="#">Kampong Ubi Community Centre</a></li>
+			<li><a href="#">Pek Kio Community Centre</a></li>
+			<li><a href="#">Queenstown Community Centre</a></li>
+			<li><a href="#">Punggol Community Club</a></li>
+			<li><a href="#">Sembawang Community Club</a></li>
+			<li><a href="#">Sengkang Community Club</a></li>
+			<li><a href="#">Yio Chu Kang Community Club</a></li>
+		</ul>
 	</div>
 </div>
 <div data-role="page" id="programmemapcat">
@@ -307,7 +322,7 @@ $(".ui-content").height(content);
 	</div>
 	<div data-role="main" class="ui-content">
 		<div class="ui-grid-a" style="height: 100%">
-			<div class="ui-block-a" style="height: 33%"><a href="#programmemapcatbook" class="ui-btn"><img src="img/14-yoga-silhouette-free-cliparts-that-you-can-download-to-you-computer-mi0FBR-clipart.png" height="97%" width="97%"><br>Yoga</a></div>
+			<div class="ui-block-a" style="height: 33%"><a href="#programmecatmap" class="ui-btn"><img src="img/14-yoga-silhouette-free-cliparts-that-you-can-download-to-you-computer-mi0FBR-clipart.png" height="97%" width="97%"><br>Yoga</a></div>
 			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn"><img src="img/kickboxer_silhouette_54570.png" height="80%" width="80%"><br>Martial Arts</a></div>
 			<div class="ui-block-a" style="height: 33%"><a href="#" class="ui-btn"><img src="img/20113-solid-black-heart-design.png" height="115%" width="115%"><br>Cardio</a></div>
 			<div class="ui-block-b" style="height: 33%"><a href="#" class="ui-btn"><img src="img/Question_mark_(black_on_white).png" height="80%" width="80%"><br>Others</a></div>
@@ -317,10 +332,16 @@ $(".ui-content").height(content);
 <div data-role="page" id="programmecatmap">
 	<div data-role="header">
 		<a href="#programmecat" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
-		<div class="ui-title">Map</div>
+		<div class="ui-title">Location</div>
 	</div>
 	<div data-role="main" class="ui-content">
-		<a href="#programmecatmapbook"><img src="img/map.png" style="max-width:100%;max-height:100%;"></a>
+		<ul data-role="listview">
+			<li><a href="#">Anchorvale Community Centre</a></li>
+			<li><a href="#programmecatmapbook">Cheng San Community Club</a></li>
+			<li><a href="#">Hougang Community Club</a></li>
+			<li><a href="#">Pek Kio Community Centre</a></li>
+			<li><a href="#">Yio Chu Kang Community Club</a></li>
+		</ul>
 	</div>
 </div>
 <div data-role="page" id="programmecatmapbook">
