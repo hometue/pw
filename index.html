@@ -423,13 +423,18 @@ $(".ui-content").height(content);
 </div>
 <div data-role="page" id="measurement">
 	<div data-role="main" class="ui-content">
-		<div style="text-align: center;">Location where fat is located</div>
+		<div style="text-align: center;">Location where fat and muscles is located</div>
 		<br>
-		<div style="text-align: center;"><img src="img/Person_icon_BLACK-01.svg.png" height="50%" width="50">
+		<div style="text-align: center;"><img src="img/Person_icon_BLACK-01.svgedit.png" height="50%" width="50">
+		<br>
+		<img src="img/blue.png" style="max-height:1em;"> Muscles concentrated here<br>
+		<img src="img/red.png" style="max-height:1em;"> Fats concentrated here
 		<br><br>
 		Total mass: 65kg
 		<br>
-		Fat concentrated at: Hips
+		Fat percentage: 14%
+		<br>
+		Muscle percentage: 33%
 		<br>
 		Suggested exercise: Sit-up
 		<br><br>
@@ -438,6 +443,7 @@ $(".ui-content").height(content);
 		Recommended heartbeat: 190 bpm
 		<br>
 		Recommended speed: 10 km/h
+		<br><a class="ui-btn" href="#measurementrec">Past measurements</a>
 		</div>
 	</div>
 	<div data-role="footer" data-position="fixed">		
@@ -450,6 +456,21 @@ $(".ui-content").height(content);
 				<li><a href="#measurement" style="font-size: 2vw;"><img src="img/Weight-100.png" style="max-width:100%;max-height:100%;"><br>Measurements</a></li>
 			</ul>
 		</div>
+	</div>
+</div>
+<div data-role="page" id="measurementrec">
+	<div data-role="header">
+		<a href="#measurement" class="ui-btn ui-icon-arrow-l ui-btn-inline ui-btn-left ui-btn-icon-left">Back</a>
+		<div class="ui-title">Past measurements</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<ul data-role="listview">
+			<li>Weight: 67kg<br>Fat percentage: 14%<br>Muscle percentage: 31%<br>Date: 5/9/2016</li>
+			<li>Weight: 66kg<br>Fat percentage: 14%<br>Muscle percentage: 32%<br>Date: 6/9/2016</li>
+			<li>Weight: 66kg<br>Fat percentage: 15%<br>Muscle percentage: 32%<br>Date: 7/9/2016</li>
+			<li>Weight: 66kg<br>Fat percentage: 15%<br>Muscle percentage: 32%<br>Date: 8/9/2016</li>
+			<li>Weight: 65kg<br>Fat percentage: 16%<br>Muscle percentage: 33%<br>Date: 9/9/2016</li>
+		</ul>
 	</div>
 </div>
 </body>
